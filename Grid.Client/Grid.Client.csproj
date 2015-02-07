@@ -234,6 +234,7 @@
     <Content Include="Scripts\angular-animate.min.js.map" />
     <Content Include="Scripts\angular.min.js.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\grid\controllers\demoController.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-dj.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-er.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-et.js" />
@@ -990,7 +991,7 @@
     <Content Include="Scripts\vendor\handsontable\handsontable.full.js" />
     <Content Include="Scripts\vendor\handsontable\handsontable.js" />
     <Content Include="Scripts\vendor\handsontable\ngHandsontable.js" />
-    <Content Include="Scripts\vendor\handsontable\ngHandsontableCollections.js" />
+    <Content Include="Scripts\vendor\handsontable\ngHandsontableGrid.js" />
     <Content Include="Scripts\vendor\jqwidgets\globalization\globalize.culture.cs-CZ.js" />
     <Content Include="Scripts\vendor\jqwidgets\globalization\globalize.culture.de-DE.js" />
     <Content Include="Scripts\vendor\jqwidgets\globalization\globalize.culture.en-CA.js" />
