@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Grid.Core
+namespace Grid.Core.Models
 {
-    public class Class1
+    public class GridModel
     {
+        public String[][] Rows { get; set; }
+
     }
 }

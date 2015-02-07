@@ -172,7 +172,9 @@ angular.module('ngHandsontable.directives', [])
 		    return {
 		        restrict: 'EA',
 		        scope: settingFactory.getScopeDefinition(htOptions),
+		        
 		        controller: ['$scope', function ($scope) {
+		            
 		            this.setColumnSetting = function (column) {
 		                if (!$scope.htSettings) {
 		                    $scope.htSettings = {};
@@ -187,7 +189,7 @@ angular.module('ngHandsontable.directives', [])
 		            if (!scope.htSettings) {
 		                scope.htSettings = {};
 		            }
-		            scope.htSettings['data'] = scope.datarows;
+		            scope.htSettings['data'] = scope.$parent.gridModel.rows.datarows;
 
 		            angular.extend(scope.htSettings, settingFactory.setHandsontableSettingsFromScope(htOptions, scope));
 
@@ -284,6 +286,7 @@ angular.module('ngHandsontable.directives', [])
 		        require: '^hotTable',
 		        scope: {},
 		        controller: ['$scope', function ($scope) {
+		            
 		            this.setColumnOptionList = function (options) {
 		                if (!$scope.column) {
 		                    $scope.column = {};
